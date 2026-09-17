@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#e8a6ad">
+  <meta name="color-scheme" content="light">
+  <meta name="robots" content="index,follow">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="description" content="2026 上岸音樂節｜星火夢鯢・浪潮失序。演出陣容、兩日時刻與活動資訊。">
+  <meta property="og:title" content="2026 上岸音樂節｜星火夢鯢・浪潮失序">
+  <meta property="og:description" content="05.16—05.17｜國立中央大學。查看演出陣容與兩日時刻。">
+  <title>2026 上岸音樂節｜星火夢鯢・浪潮失序</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#content">跳到主要內容</a>
+
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="回到首頁">ASHORE <span>2026</span></a>
+    <nav aria-label="主要導覽">
+      <a href="#lineup">演出</a>
+      <a href="#schedule">時刻</a>
+      <a href="#info">資訊</a>
+    </nav>
+    <a class="nav-ticket" href="https://ncu.kktix.cc/events/ashoremusicfest2026" target="_blank" rel="noreferrer">活動資料 ↗</a>
+  </header>
+
+  <main id="content">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-art" aria-hidden="true">
+        <img src="https://assets.kktix.io/upload_images/284480/2026_kktix%E4%B8%BB%E8%A6%96%E8%A6%BA_large.png" alt="" fetchpriority="high" decoding="async">
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">05.16—05.17 · NCU · TAOYUAN</p>
+        <h1 id="hero-title">
+          <span>星火夢鯢</span>
+          <b>浪潮失序</b>
+        </h1>
+        <p class="hero-meta">2026 上岸音樂節<br>國立中央大學</p>
+        <a class="primary-action" href="#schedule">看演出時刻 <span>↓</span></a>
+      </div>
+
+      <div class="hero-stamp" aria-hidden="true">
+        ASHORE
+        <span>MUSIC FESTIVAL</span>
+      </div>
+    </section>
+
+    <section class="lineup section" id="lineup" aria-labelledby="lineup-title">
+      <div class="section-head">
+        <p class="kicker">LINEUP</p>
+        <h2 id="lineup-title">演出陣容</h2>
+        <p>有公布時刻的演出可直接點選定位。</p>
+      </div>
+      <div class="artist-grid" data-artist-grid aria-label="演出陣容"></div>
+    </section>
+
+    <section class="schedule section" id="schedule" aria-labelledby="schedule-title">
+      <div class="section-head schedule-head">
+        <div>
+          <p class="kicker">TIMETABLE</p>
+          <h2 id="schedule-title">演出時刻</h2>
+        </div>
+        <div class="saved-summary" aria-live="polite">
+          <span>我的收藏</span>
+          <b data-favorite-count>0</b>
+        </div>
+      </div>
+
+      <div class="schedule-controls" aria-label="時刻表篩選">
+        <div class="day-switch" aria-label="日期">
+          <button class="active" type="button" data-day="1">05 / 16</button>
+          <button type="button" data-day="2">05 / 17</button>
+        </div>
+
+        <div class="stage-filter" aria-label="舞台">
+          <button class="active" type="button" data-stage="all">全部</button>
+          <button type="button" data-stage="sun">旭浪</button>
+          <button type="button" data-stage="shore">朝岸</button>
+          <button type="button" data-stage="hall">浪汀</button>
+          <button type="button" data-saved-only aria-pressed="false">收藏</button>
+        </div>
+      </div>
+
+      <div class="schedule-status" data-schedule-status aria-live="polite"></div>
+      <div class="schedule-list" data-schedule-list></div>
+    </section>
+
+    <section class="info section" id="info" aria-labelledby="info-title">
+      <div class="info-title">
+        <p class="kicker">INFO</p>
+        <h2 id="info-title">上岸，見。</h2>
+      </div>
+
+      <div class="facts">
+        <div><span>DATE</span><b>2026 / 05 / 16—17</b></div>
+        <div><span>PLACE</span><b>國立中央大學</b></div>
+        <div><span>THEME</span><b>星火夢鯢・浪潮失序</b></div>
+      </div>
+
+      <div class="info-links">
+        <a href="https://www.instagram.com/www___ashore/" target="_blank" rel="noreferrer">Instagram ↗</a>
+        <a href="https://ncu.kktix.cc/events/ashoremusicfest2026" target="_blank" rel="noreferrer">活動資料 ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>ASHORE MUSIC FESTIVAL · 2026</span>
+    <small>Unofficial redesign study based on public 2026 Ashore materials.</small>
+  </footer>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(() => {}));
+    }
+  </script>
+  <script src="script.js" defer></script>
+</body>
+</html>
